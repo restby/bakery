@@ -1,0 +1,11 @@
+.pancakes-slider {
+  &__item {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+  }
+
+  &__img {
+    display: block;
+  }
+}

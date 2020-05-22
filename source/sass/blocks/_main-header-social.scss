@@ -1,0 +1,25 @@
+.main-header-social {
+  &__list {
+    @include list-reset;
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      margin-left: 28px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  @media (max-width: 1050px) {
+    &__list {
+      li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}

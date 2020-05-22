@@ -1,0 +1,75 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    color: #56534c;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-align: center;
+    margin-bottom: 45px;
+  }
+
+  &__body {
+    margin-bottom: 45px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn {
+    padding: 0;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border: none;
+    border-bottom: 1px solid #d7d5ca;
+    border-top: 1px solid #d7d5ca;
+    background-color: transparent;
+    min-width: 111px;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.6px;
+    cursor: pointer;
+  }
+
+  &__ava {
+    margin-left: 25px;
+    margin-right: 25px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+
+  &__text {
+    color: #a47d5e;
+    font-family: "Scriptina", "Arial", sans-serif;
+    font-size: 24px;
+    letter-spacing: 0.6px;
+    max-width: 240px;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/qutes-top.png");
+      width: 23px;
+      height: 14px;
+    }
+
+    &::before {
+      top: 0;
+      left: 0;
+      transform: translate(-63px, -20px);
+    }
+
+    &::after {
+      bottom: 0;
+      right: 0;
+      transform: translate(61px, 18px) scale(-1, 1);
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.main-header-navigation {
+  &__list {
+    @include list-reset;
+    display: inline-flex;
+
+    li {
+      padding-left: 85px;
+      position: relative;
+
+      &::before {
+        content: "~";
+        position: absolute;
+        left: 40px;
+        top: 0;
+        color: $white-color;
+      }
+
+      &:first-child {
+        padding-left: 0;
+
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__link {
+    color: $header-text-color;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4.2px;
+    text-decoration: none;
+  }
+
+  @media (max-width: 1050px) {
+    margin-bottom: 20px;
+  }
+}
