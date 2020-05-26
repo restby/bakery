@@ -57,7 +57,9 @@ h6 {
 }
 
 .container {
-  max-width: 1260px;
+  max-width: 1290px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
 }
 
@@ -81,4 +83,8 @@ h6 {
   text-transform: uppercase;
   letter-spacing: 1.4px;
   text-align: center;
+}
+
+body.lock {
+  overflow: hidden;
 }
