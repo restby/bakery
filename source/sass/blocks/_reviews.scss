@@ -9,20 +9,18 @@
     font-weight: 700;
     letter-spacing: 0.6px;
     text-align: center;
-    margin-bottom: 45px;
+    margin-bottom: 42px;
   }
 
   &__body {
-    margin-bottom: 45px;
+    margin-bottom: 39px;
     display: flex;
     align-items: center;
   }
 
-  &__btn {
-    padding: 0;
+  &__name {
     padding-top: 14px;
     padding-bottom: 14px;
-    border: none;
     border-bottom: 1px solid #d7d5ca;
     border-top: 1px solid #d7d5ca;
     background-color: transparent;
@@ -30,7 +28,7 @@
     font-size: 24px;
     line-height: 30px;
     letter-spacing: 0.6px;
-    cursor: pointer;
+    text-align: center;
   }
 
   &__ava {
@@ -63,13 +61,13 @@
     &::before {
       top: 0;
       left: 0;
-      transform: translate(-63px, -20px);
+      transform: translate(-83px, -13px);
     }
 
     &::after {
       bottom: 0;
       right: 0;
-      transform: translate(61px, 18px) scale(-1, 1);
+      transform: translate(82px, 21px) scale(-1, 1);
     }
   }
 }

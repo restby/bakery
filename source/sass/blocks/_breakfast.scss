@@ -1,0 +1,113 @@
+.breakfast {
+  background-color: $bg-breakfast-color;
+  background-image: url("../img/bg-breakfast.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 411px;
+    height: 220px;
+    bottom: 0;
+    right: 0;
+    background-image: url("../img/breakfast-text-bg.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    z-index: 5;
+  }
+
+  .container {
+    padding-left: 200px;
+    padding-right: 2px;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 89px;
+    padding-bottom: 41px;
+  }
+
+  &__col {
+    &:first-child {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 10px;
+    }
+
+    &:last-child {
+      flex: 0 0 440px;
+    }
+  }
+
+  &__title {
+    font-size: 60px;
+    color: $white-color;
+    margin-bottom: 14px;
+  }
+
+  &__subtitle {
+    margin-bottom: 55px;
+    font-size: 18px;
+  }
+
+  &__price-list {
+    @include list-reset;
+    display: flex;
+    flex-direction: column;
+  }
+
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/breakfast-icon.png");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      bottom: 7px;
+      left: 50%;
+      width: 90px;
+      height: 27px;
+      transform: translateX(-42px);
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__price-title {
+    color: #ffffff;
+    font-size: 30px;
+    font-family: "ProximaNovaRegular", "Times New Roman", serif;
+    letter-spacing: 1.5px;
+    text-align: center;
+    margin-bottom: 6px;
+  }
+
+  &__price-text {
+    color: #c2beba;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    margin-bottom: 15px;
+  }
+
+  &__price-count {
+    color: #dfc691;
+    font-size: 36px;
+    letter-spacing: 1.8px;
+  }
+}

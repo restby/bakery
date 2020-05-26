@@ -1,4 +1,10 @@
 .pancakes-slider {
+  &__list {
+    padding-left: 47px;
+    padding-right: 17px;
+    position: relative;
+  }
+
   &__item {
     width: 90px;
     height: 90px;

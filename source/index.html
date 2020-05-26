@@ -7,7 +7,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
   <!-- Fonts -->
-  <link rel="preload" href="fonts/Arial.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <!-- <link rel="preload" href="fonts/Arial.woff2" as="font" type="font/woff2" crossorigin="anonymous"> -->
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.min.css">
 
@@ -148,11 +148,11 @@
                 <h3 class="reviews__title">Chef Cook</h3>
                 <!-- /.reviews__title -->
                 <div class="reviews__body">
-                  <button class="reviews__btn reviews__btn--prev">Benito</button>
-                  <!-- /.reviews__btn reviews__btn--prev -->
+                  <span class="reviews__name reviews__name--prev">Benito</span>
+                  <!-- /.reviews__name reviews__name--prev -->
                   <img class="reviews__ava" src="img/chef-ava.jpg" alt="">
-                  <button class="reviews__btn reviews__btn--next">Gaspare</button>
-                  <!-- /.reviews__btn reviews__btn--next -->
+                  <span class="reviews__name reviews__name--next">Gaspare</span>
+                  <!-- /.reviews__name reviews__name--next -->
                 </div>
                 <!-- /.reviews__body -->
                 <p class="reviews__text">Unique creations for unique occasions.</p>
@@ -197,7 +197,7 @@
         <div class="container">
           <div class="pancakes__row">
             <div class="pancakes__col">
-              <img class="pancakes__img" src="img/pancakes-01.jpg" alt="">
+              <!-- <img class="pancakes__img" src="img/pancakes-01.jpg" alt=""> -->
             </div>
             <!-- /.pancakes__col -->
             <div class="pancakes__col">
@@ -210,20 +210,38 @@
                   venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus.</p>
                 <!-- /.pancakes__text -->
                 <div class="pancakes__slider pancakes-slider">
-                  <div class="pancakes-slider__item">
-                    <img class="pancakes-slider__img" src="img/pancakes-prew-02.jpg" alt="">
+                  <div class="pancakes-slider__list">
+                    <div class="pancakes-slider__item">
+                      <img class="pancakes-slider__img" src="img/pancakes-prew-02.jpg" alt="">
+                    </div>
+                    <!-- /.pancakes-slider__item -->
+                    <div class="pancakes-slider__item">
+                      <img class="pancakes-slider__img" src="img/pancakes-prew-03.jpg" alt="">
+                    </div>
+                    <!-- /.pancakes-slider__item -->
+                    <div class="pancakes-slider__item">
+                      <img class="pancakes-slider__img" src="img/pancakes-prew-04.jpg" alt="">
+                    </div>
+                    <!-- /.pancakes-slider__item -->
+                    <div class="pancakes-slider__item">
+                      <img class="pancakes-slider__img" src="img/pancakes-prew-04.jpg" alt="">
+                    </div>
+                    <!-- /.pancakes-slider__item -->
+                    <div class="pancakes-slider__item">
+                      <img class="pancakes-slider__img" src="img/pancakes-prew-04.jpg" alt="">
+                    </div>
+                    <!-- /.pancakes-slider__item -->
                   </div>
-                  <!-- /.pancakes-slider__item -->
-                  <div class="pancakes-slider__item">
-                    <img class="pancakes-slider__img" src="img/pancakes-prew-03.jpg" alt="">
-                  </div>
-                  <!-- /.pancakes-slider__item -->
-                  <div class="pancakes-slider__item">
-                    <img class="pancakes-slider__img" src="img/pancakes-prew-04.jpg" alt="">
-                  </div>
-                  <!-- /.pancakes-slider__item -->
+                  <!-- /.pancakes-slider__list -->
                 </div>
                 <!-- /.pancakes__slider pancakes-slider -->
+                <div class="pancakes__time">
+                  <span>ready in</span>
+                  <b>40</b>
+                  <span>mins</span>
+                </div>
+                <!-- /.pancakes__gallery-time -->
+                <button class="pancakes__btn"></button> <!-- /.pancakes__btn -->
               </div>
             </div>
             <!-- /.pancakes__col -->
@@ -276,20 +294,25 @@
             <!-- /.breakfast__col -->
             <div class="breakfast__col">
               <article class="breakfast__article breakfast-article">
-                <div class="breakfast-article__head">
-                  <span>EST.</span>
-                  <span>1893</span>
+                <div class="breakfast-article__item breakfast-article__item--1">
+                  <div class="breakfast-article__head">
+                    <span>EST.</span>
+                    <span>1893</span>
+                  </div>
+                  <!-- /.breakfast-article__head -->
+                  <h3 class="breakfast-article__title">Your morning
+                    Escape with Flair</h3>
+                  <!-- /.breakfast-article__title -->
+                  <p class="breakfast-article__text">Donec vitae sapien ut libero venenatis faucibus.
+                    Nullam quis ante. Etiam sit amet orci eget eros
+                    faucibus tincidunt. Duis leo.</p>
+                  <!-- /.breakfast-article__text -->
+                  <a href="" class="breakfast-article__link">READ</a>
+                  <!-- /.breakfast-article__link -->
                 </div>
-                <!-- /.breakfast-article__head -->
-                <h3 class="breakfast-article__title">Your morning
-                  Escape with Flair</h3>
-                <!-- /.breakfast-article__title -->
-                <p class="breakfast-article__text">Donec vitae sapien ut libero venenatis faucibus.
-                  Nullam quis ante. Etiam sit amet orci eget eros
-                  faucibus tincidunt. Duis leo.</p>
-                <!-- /.breakfast-article__text -->
-                <a href="" class="breakfast-article__link">READ</a>
-                <!-- /.breakfast-article__link -->
+                <!-- /.breakfast-article__item -->
+                <div class="breakfast-article__item breakfast-article__item--2"></div> -->
+                <div class="breakfast-article__item breakfast-article__item--3"></div>
               </article>
               <!-- /.breakfast__article breakfast-article -->
             </div>
@@ -301,11 +324,131 @@
       </section>
       <!-- /.breakfast -->
 
+      <section class="sandwich">
+        <div class="container">
+          <h2 class="section-title sandwich__title">The Jibarito sandwich</h2>
+          <!-- /.section-title sandwich__title -->
+          <b class="section-subtitle sandwich__subtitle">the best sandwich you’ve ever tasted!</b>
+          <!-- /.section-subtitle sandwich__subtitle -->
+          <div class="sandwich__row">
+            <div class="sandwich__col">
+              <ul class="sandwich__ingredients-list">
+                <li>
+                  <div class="sandwich__ingredients-img">
+                    <img src="img/sandwich-01.jpg" alt="Class aptent">
+                  </div>
+                  <!-- /.sandwich__ingredients-img -->
+                  <h3 class="sandwich__ingredients-title">Class aptent</h3>
+                  <!-- /.sandwich__ingredients-title -->
+                  <p class="sandwich__ingredients-text">Quot alienum persecuti ut eam, nam ad
+                    atqui primis nusquam.</p>
+                  <!-- /.sandwich__ingredients-text -->
+                </li>
+                <li>
+                  <div class="sandwich__ingredients-img">
+                    <img src="img/sandwich-02.jpg" alt="Nulla eget">
+                  </div>
+                  <!-- /.sandwich__ingredients-img -->
+                  <h3 class="sandwich__ingredients-title">Nulla eget</h3>
+                  <!-- /.sandwich__ingredients-title -->
+                  <p class="sandwich__ingredients-text">Nullam dictum felis eu pede mollis
+                    pretium Integer tincidunt.</p>
+                  <!-- /.sandwich__ingredients-text -->
+                </li>
+                <li>
+                  <div class="sandwich__ingredients-img">
+                    <img src="img/sandwich-03.jpg" alt="Sed nibh purus">
+                  </div>
+                  <!-- /.sandwich__ingredients-img -->
+                  <h3 class="sandwich__ingredients-title">Sed nibh purus</h3>
+                  <!-- /.sandwich__ingredients-title -->
+                  <p class="sandwich__ingredients-text"> Aenean eleifend tellus leo ligula,
+                    porttitor eu, consequat vitae.</p>
+                  <!-- /.sandwich__ingredients-text -->
+                </li>
+              </ul>
+              <!-- /.sandwich__ingredients-list -->
+            </div>
+            <!-- /.sandwich__col -->
+            <div class="sandwich__col">
+              <div class="sandwich__gallery">
+                <div class="sandwich__gallery-img">
+                  <img src="img/sandwich-item-01.jpg" alt="">
+                </div>
+                <!-- /.sandwich__gallery-img -->
+                <ul class="sandwich__gallery-time-list">
+                  <li>
+                    <span>PREP</span>
+                    <b>15</b>
+                    <span>mins</span>
+                  </li>
+                  <li>
+                    <span>cook </span>
+                    <b>35</b>
+                    <span>mins</span>
+                  </li>
+                  <li>
+                    <span>ready in</span>
+                    <b>50</b>
+                    <span>mins</span>
+                  </li>
+                </ul>
+                <!-- /.sandwich__gallery-time-list -->
+                <a href="" class="sandwich__gallery-link">FULL RECIPE</a> <!-- /.sandwich__gallery-link -->
+              </div>
+              <!-- /.sandwich__gallery -->
+            </div>
+            <!-- /.sandwich__col -->
+          </div>
+          <!-- /.sandwich__row -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.sandwich -->
+
     </main>
     <!-- /.content -->
 
     <footer class="main-footer">
       <div class="container">
+        <nav class="main-footer__nav">
+          <ul class="main-footer__nav-list">
+            <li>
+              <a class="main-footer__nav-link" href="#">our menu</a>
+              <!-- /.main-footer__nav-link -->
+            </li>
+            <li>
+              <a class="main-footer__nav-link" href="#">gallery</a>
+              <!-- /.main-footer__nav-link -->
+            </li>
+            <li>
+              <a class="main-footer__nav-link" href="#">culture</a>
+              <!-- /.main-footer__nav-link -->
+            </li>
+          </ul>
+          <!-- /.main-footer__nav-list -->
+          <div class="main-footer__logo">
+            <a class="main-footer__logo-link" href="#">Gustoso</a>
+            <!-- /.main-footer__logo-link -->
+          </div>
+          <!-- /.main-footer__logo -->
+          <ul class="main-footer__nav-list">
+            <li>
+              <a class="main-footer__nav-link" href="#">events</a>
+              <!-- /.main-footer__nav-link -->
+            </li>
+            <li>
+              <a class="main-footer__nav-link" href="#">catering</a>
+              <!-- /.main-footer__nav-link -->
+            </li>
+            <li>
+              <a class="main-footer__nav-link" href="#">visit us</a>
+              <!-- /.main-footer__nav-link -->
+            </li>
+          </ul>
+          <!-- /.main-footer__nav-list -->
+        </nav>
+        <!-- /.main-footer__nav -->
 
       </div>
       <!-- /.container -->
@@ -323,7 +466,7 @@
   <!-- <script src="js/libs/bootstrap.min.js"></script> -->
 
   <!-- slick -->
-  <!-- <script src="js/libs/slick.js"></script> -->
+  <script src="js/libs/slick.js"></script>
   <!-- <script src="js/libs/slick.min.js"></script> -->
 
   <!-- owlCarousel -->

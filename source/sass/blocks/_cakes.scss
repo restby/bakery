@@ -1,8 +1,7 @@
 .cakes {
   .container {
-    padding-top: 105px;
-    padding-right: 15px;
-    padding-bottom: 112px;
+    padding-top: 109px;
+    padding-bottom: 101px;
   }
 
   &__body {
@@ -11,41 +10,42 @@
   }
 
   &__col {
-    flex: 1 1 50%;
+    flex: 0 0 50%;
 
     &:first-child {
-      padding-left: 70px;
-      padding-right: 70px;
+      padding-left: 62px;
+      padding-right: 60px;
       display: flex;
       flex-direction: column;
       align-items: center;
     }
-
-    &:last-child {
-      padding-left: 10px;
-    }
   }
 
   &__title {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
   }
 
   &__subtitle {
-    margin-bottom: 70px;
+    margin-bottom: 53px;
   }
 
   &__text {
-    font-family: "Proxima Nova", "Arial", sans-serif;
+    padding-left: 11px;
+    font-family: "ProximaNovaRegular", "Arial", sans-serif;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 1.4px;
-    margin-bottom: 40px;
+    margin-bottom: 34px;
+    text-align: justify;
   }
 
   &__galery {
     display: inline-flex;
     flex-wrap: wrap;
     position: relative;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   &__galery-item {
@@ -66,9 +66,12 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 247px;
-    height: 247px;
+    transform: translate(-139px, -130px);
+    width: 279px;
+    height: 279px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 91px;
     background-image: url("../img/art-icon-bg.png");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -78,8 +81,5 @@
     line-height: 36px;
     text-transform: uppercase;
     text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
   }
 }

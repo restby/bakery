@@ -1,104 +1,91 @@
-// .slick-dots li button::before {
-//   color: $text-color;
-//   font-size: 40px;
-//   opacity: 0.8;
-// }
+/* Слайдер */
+//  .slick-slider {}
 
-// .slick-dots li.slick-active button::before {
-//   color: $main-color;
-//   opacity: 1;
-// }
+/* Слайдер запущен */
+//  .slick-slider.slick-initialized {}
 
-// .slick-next,
-// .slick-prev {
-//   top: auto;
-// }
+/* Слайдер с точками */
+//  .slick-slider.slick-dotted {}
 
-// .slick-prev {
-//   position: absolute;
-//   bottom: 0;
-//   left: 0;
-//   width: 40px;
-//   height: 40px;
-//   border-radius: 50%;
-//   transform: translateY(40px) translateX(10px);
-//   z-index: 2;
-//   cursor: pointer;
-//   background-color: rgba($text-color, 0.85);
+/* Ограничивающая оболочка */
+//  .slick-list {}
 
-//   &::before {
-//     position: absolute;
-//     content: "";
-//     width: 15px;
-//     height: 4px;
-//     top: 14px;
-//     right: 50%;
-//     background-color: $white-color;
-//     transform: translateX(50%) rotate(-45deg);
-//     opacity: 1;
-//   }
+/* Лента слайдов */
+//  .slick-track {}
 
-//   &::after {
-//     position: absolute;
-//     content: "";
-//     width: 15px;
-//     height: 4px;
-//     bottom: 14px;
-//     left: 50%;
-//     background-color: $white-color;
-//     transform: translateX(-50%) rotate(45deg);
-//     opacity: 1;
-//   }
-// }
+/* Слайд */
+//  .slick-slide {}
 
-// .slick-next {
-//   position: absolute;
-//   bottom: 0;
-//   right: 0;
-//   width: 40px;
-//   height: 40px;
-//   border-radius: 50%;
-//   transform: translateY(40px) translateX(-10px);
-//   z-index: 2;
-//   cursor: pointer;
-//   background-color: rgba($text-color, 0.85);
+/* Слайд активный (показывается) */
+//  .slick-slide.slick-active {}
 
-//   &::before {
-//     position: absolute;
-//     content: "";
-//     width: 15px;
-//     height: 4px;
-//     top: 14px;
-//     left: 50%;
-//     background-color: $white-color;
-//     transform: translateX(-50%) rotate(45deg);
-//     opacity: 1;
-//   }
+/* Слайд основной */
+//  .slick-slide.slick-current {}
 
-//   &::after {
-//     position: absolute;
-//     content: "";
-//     width: 15px;
-//     height: 4px;
-//     bottom: 14px;
-//     right: 50%;
-//     background-color: $white-color;
-//     transform: translateX(50%) rotate(-45deg);
-//     opacity: 1;
-//   }
-// }
+/* Слайд по центру */
+//  .slick-slide.slick-center {}
 
-// .slick-next:focus,
-// .slick-next:hover,
-// .slick-prev:focus,
-// .slick-prev:hover {
-//   background-color: rgba($text-color, 0.45);
+/* Клонированный слайд */
+//  .slick-slide.slick-cloned {}
 
-//   &::before {
-//     background-color: rgba($white-color, 0.85);
-//   }
+/* Стрелка */
+//  .slick-arrow {}
 
-//   &::after {
-//     background-color: rgba($white-color, 0.85);
-//   }
-// }
+/* Стрелка влево */
+//  .slick-arrow.slick-prev {}
+
+/* Стрелка вправо */
+//  .slick-arrow.slick-next {}
+
+/* Стрелка не активная */
+//  .slick-arrow.slick-disabled {}
+
+/* Точки (булиты) */
+//  .slick-dots {}
+
+//  .slick-dots li {}
+
+/* Активная точка */
+//  .slick-dots li.slick-active {}
+
+/* Элемент точки */
+//  .slick-dots li button {}
+
+.slick-arrow.slick-prev,
+.slick-arrow.slick-next {
+  position: absolute;
+  top: 50%;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  background-image: url("../../../img/svgmin/arrow.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.slick-arrow.slick-prev {
+  transform: translateY(-22px) scale(-1, 1);
+  left: 0;
+  z-index: 2;
+}
+
+.slick-arrow.slick-next {
+  right: 0;
+  transform: translateY(-22px);
+}
+
+.slick-arrow.slick-prev.slick-disabled {
+  transform: translateY(-22px) scale(1, -1);
+  background-image: url("../../../img/svgmin/arrow-disabled.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.slick-arrow.slick-next.slick-disabled {
+  transform: translateY(-22px) scale(-1, 1);
+  background-image: url("../../../img/svgmin/arrow-disabled.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
