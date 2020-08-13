@@ -39,15 +39,24 @@ img {
 }
 
 .section-title {
-  color: $white-color;
-  font-size: 50px;
-  line-height: 50px;
-  letter-spacing: 5px;
-  text-transform: uppercase;
+  color: $text-color;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: 1.2px;
+  font-weight: 700;
 
-  &--black {
-    color: $black-color;
+  &--white {
+    color: $white-color;
   }
+}
+
+.section-subtitle {
+  color: $active-color;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 1.4px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .item-title {
